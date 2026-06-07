@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRIVACY_POLICY // VITA_STABILIZER_OS</title>
-    <!-- Importamos la fuente del juego para consistencia -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -26,7 +25,6 @@
             justify-content: center;
         }
 
-        /* Efecto de líneas de escaneo de monitor viejo */
         body::before {
             content: " ";
             display: block;
@@ -79,14 +77,8 @@
             padding-bottom: 5px;
         }
 
-        p, li {
-            font-size: 1.1rem;
-            color: var(--text-main);
-        }
-
-        strong {
-            color: var(--terminal-green);
-        }
+        p, li { font-size: 1.1rem; color: var(--text-main); }
+        strong { color: var(--terminal-green); }
 
         .highlight-box {
             border: 1px solid var(--terminal-green);
@@ -104,25 +96,15 @@
             text-align: center;
         }
 
-        .blink {
-            animation: blinker 1s linear infinite;
-        }
+        .blink { animation: blinker 1s linear infinite; }
+        @keyframes blinker { 50% { opacity: 0; } }
 
-        @keyframes blinker {
-            50% { opacity: 0; }
-        }
-
-        /* Estilo para links de contacto */
         a {
             color: var(--terminal-green);
             text-decoration: none;
             border-bottom: 1px dashed var(--terminal-green);
         }
-
-        a:hover {
-            background: var(--terminal-green);
-            color: black;
-        }
+        a:hover { background: var(--terminal-green); color: black; }
     </style>
 </head>
 <body>
@@ -130,39 +112,38 @@
         <header>
             <h1>Privacy Policy</h1>
             <div class="status-bar">
-                System: VitaStabilizer_OS // Status: <span class="blink">SECURE</span> // Updated: JUNE_2026
+                System: VitaStabilizer_OS // Status: <span class="blink">SECURE</span> // Version: 1.0.1
             </div>
         </header>
 
         <section>
-            <p><strong>TRIAGE PANIC</strong> is a diagnostic and survival simulation developed as a personal project. This document outlines the protocols regarding the handling of user data within the digital environment of the Game.</p>
+            <p><strong>TRIAGE PANIC</strong> is a survival simulation. This document outlines the protocols for user data management within the Game's digital environment.</p>
         </section>
 
         <div class="highlight-box">
-            <strong>CORE PROTOCOL:</strong> Triage Panic is designed as a local-first experience. We prioritize user sovereignty over data.
+            <strong>CORE PROTOCOL:</strong> Data is handled locally by default. External synchronization is only initiated for specific network-dependent features.
         </div>
 
-        <h2>01. DATA COLLECTION & STORAGE</h2>
-        <p>We do <strong>NOT</strong> collect, harvest, or transmit any personally identifiable information (PII). All neural synchronization data, including:</p>
+        <h2>01. LOCAL DATA STORAGE</h2>
+        <p>By default, all progress (VitaCredits, Stats, Inventory) is stored <strong>locally</strong> on your hardware. We do not have access to this information unless you utilize cloud synchronization services.</p>
+
+        <h2>02. EXTERNAL SERVICES & MULTIPLAYER</h2>
+        <p>To provide advanced functionality, the Game may interface with the following third-party systems:</p>
         <ul>
-            <li>Financial assets (VitaCredits)</li>
-            <li>Biometric status (Health, Sanity, Stress)</li>
-            <li>Inventory logs (Fridge & Equipment)</li>
+            <li><strong>Google Play Games:</strong> Used for authentication, leaderboards, and achievements.</li>
+            <li><strong>Firebase (Google):</strong> Utilized for real-time multiplayer synchronization and secure cloud storage of game state.</li>
         </ul>
-        <p>Is stored exclusively on your local hardware. We have no access to your save files.</p>
+        <p>These services may collect anonymized technical identifiers (such as User IDs) to ensure stable network operations. For more information, please refer to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
 
-        <h2>02. THIRD-PARTY ARCHITECTURE</h2>
-        <p>The Game is constructed using the Flutter and Flame frameworks. No external telemetry, surveillance SDKs, or advertising tracking modules are integrated into the system.</p>
+        <h2>03. DATA PROTECTION PROTOCOLS</h2>
+        <p>We do <strong>NOT</strong> sell, trade, or distribute your data to external corporate entities. Project Triage Panic does not use invasive surveillance SDKs or third-party advertising trackers.</p>
 
-        <h2>03. PROTECTION OF MINORS</h2>
-        <p>Our protocols strictly adhere to international privacy standards. Since no data is collected, we do not possess any information from users, including children under the age of 13. If you believe a breach has occurred, please initiate contact immediately.</p>
+        <h2>04. PROTECTION OF MINORS</h2>
+        <p>Our protocols adhere to international safety standards. We do not knowingly collect personal data from children under 13. If you believe a neural link breach has occurred, contact us immediately.</p>
 
-        <h2>04. PROTOCOL UPDATES</h2>
-        <p>This Privacy Policy may be recalibrated to align with new regulatory requirements. Users are advised to monitor this terminal periodically for version increments.</p>
-
-        <h2>05. COMMUNICATION CHANNEL</h2>
-        <p>For inquiries regarding these protocols, contact the lead developer at:</p>
-        <p style="text-align: center; font-size: 1.4rem;">
+        <h2>05. UPDATES & CONTACT</h2>
+        <p>This policy may be recalibrated for compliance. For inquiries, contact the lead developer at:</p>
+        <p style="text-align: center; font-size: 1.2rem; margin-top: 20px;">
             <a href="mailto:emmvol.dev@gmail.com">emmvol.dev@gmail.com</a>
         </p>
 
