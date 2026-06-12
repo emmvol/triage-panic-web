@@ -3,7 +3,7 @@
 Este repositorio aloja los documentos legales obligatorios para el juego **Triage Panic** en cumplimiento con las políticas de Google Play Store.
 
 ## Contenido
-*   **Privacy Policy:** Disponible en [https://emmvol.github.io/triage-panic-privacy/](https://emmvol.github.io/triage-panic-privacy/)
+*   **Privacy Policy:** Disponible en [https://emmvol.github.io/triage-panic-web/](https://emmvol.github.io/triage-panic-web/)
 *   **Soporte:** Para dudas técnicas o legales, contactar a [emmvol.dev@gmail.com]
 
 ## Sobre el Juego
